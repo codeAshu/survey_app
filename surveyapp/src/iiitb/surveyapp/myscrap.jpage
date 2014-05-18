@@ -1,0 +1,8 @@
+ 
+StringBuilder sb = new StringBuilder();
+			String content = null;
+				 
+			content = "{\"meta\": {\"type\": \"meta\",\"name\": \"Survey App\"},";
+			
+			sb.append(content).append("\n");
+			System.out.println(sb.toString());

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_light"
+    android:gravity="end"
+    android:orientation="vertical"
+    tools:context=".ViewSurveyActivity" >
+
+    <TextView
+        android:id="@+id/survey_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/surveys"
+        android:textColor="#0099cc"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/remove_button"
+        android:layout_below="@id/survey_title" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@id/survey_title"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no_tasks"
+        android:textColor="@color/black_overlay"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+   
+
+    <Button
+        android:id="@id/remove_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/remove_completed" />
+
+</RelativeLayout>

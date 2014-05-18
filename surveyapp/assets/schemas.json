@@ -1,0 +1,122 @@
+{
+	"meta": {
+		"type": "meta",
+		"name": "Survey App" 
+	},
+	"where do you live?": {"type": "string", "id": "0", "default": "", "priority": "0", "hint":"write here.."},
+	"Do you believe in Vampires ?": {
+		"type": "integer",
+		"id": "1",
+		"default": "y/N",
+		"priority": "1",
+		"options": {
+			"0": "Yes",
+			"1": "No"
+			}
+	},
+	"Is Twilight the best movie you have ever seen ?": {
+		"type": "integer",
+		"id": "2",
+		"priority": "2",
+		"options": {
+			"0": "Strongly Disagree",
+			"1": "Disagree",
+			"2": "Neutral",
+			"3": "Agree",
+			"4": "Strongly Agree"
+		   
+		},
+		"toggles": {
+		  "0":["Now because you disagree with Twilight, will you please let us know your favourit movie"],
+		  "1":["Now because you disagree with Twilight, will you please let us know your favourit movie"]
+		}
+	},
+	"Now because you disagree with Twilight, will you please let us know your favourit movie": {
+		"type": "string",
+		"id": "3",
+		"default": "",
+		"priority": "3",
+		"hint":"Example: Twilight Saga"
+	},
+	"Direction of movie Twilight is the best you have ever seen ": {
+		"type": "integer",
+		"id": "4",
+		"default": "0",
+		"priority": "4",
+	    "options": {
+			"0": "Strongly Disagree",
+			"1": "Disagree",
+			"2": "Somewhat Disagree",
+			"3": "Neutral",
+			"4": "Somewhat Agree",
+			"5": "Agree",
+			"6": "Strongly Agree"
+			}		   
+	},
+	"where do you work?": {
+		"type": "string",
+		"id": "5",
+		"default": "",
+		"priority": "5",
+		"hint":"write here.."
+	},
+	"Do you believe in Ghots ?": {
+		"type": "integer",
+		"id": "6",
+		"default": "y/N",
+		"priority": "6",
+		"options": {
+			"0": "Yes",
+			"1": "No"
+			}
+	},
+	"Can you describe a ghost ?": {
+		"type": "string",
+		"id": "7",
+		"default": "",
+		"priority": "7",
+		"hint":"write here.."
+	},
+	"Do you believe in God ?": {
+		"type": "integer",
+		"id": "8",
+		"default": "y/N",
+		"priority": "8",
+		"options": {
+			"0": "Yes",
+			"1": "No"
+			}
+	},
+	"Is Insidious is the best horror movie you have ever seen ?": {
+		"type": "integer",
+		"id": "9",
+		"default": "0",
+		"priority": "9",
+	    "options": {
+			"0": "Strongly Disagree",
+			"1": "Disagree",
+			"2": "Somewhat Disagree",
+			"3": "Neutral",
+			"4": "Somewhat Agree",
+			"5": "Agree",
+			"6": "Strongly Agree"
+			}		   
+	},
+	"Do you think this app needs some feedback ? ": {
+		"type": "boolean",
+		"id": "10",
+		"default": "0",
+		"priority": "10",
+		"toggles": {
+			"1": [ "Please tell us how what you think.." ] 
+		} 
+	},
+   "Please tell us how what you think..": {
+		"type": "string",
+		"id": "11",
+		"default": "",
+		"priority": "11",
+		"hint":"write feedback here.."
+	}
+   
+}
